@@ -1,0 +1,39 @@
+﻿<Window x:Class="Viktorina26042022.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Viktorina26042022"
+        mc:Ignorable="d"
+        Title="MainWindow" MinHeight="450" MinWidth="800" MaxHeight="450" MaxWidth="800" Loaded="Window_Loaded" >
+    <Grid Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}">
+
+        <Label x:Name="lblquestion" Content="Question" Margin="51,79,0,0" HorizontalAlignment="Left" Width="349" Height="90" VerticalAlignment="Top" />
+
+        <Image x:Name="img" Height="166" Margin="400,0,10,231" VerticalAlignment="Bottom"/>
+
+        <RadioButton x:Name="rb1" Content="First Question" Margin="51,217,422,167"/>
+        <RadioButton x:Name="rb2" Content="Second Question" Margin="51,323,422,61"/>
+        <RadioButton x:Name="rb3" Content="Third Question" Margin="463,217,10,167"/>
+        <RadioButton x:Name="rb4" Content="Forth Question" Margin="463,323,10,61"/>
+
+        <CheckBox Visibility="Hidden" IsEnabled="False" x:Name="cb1" Content="First Question" Margin="51,217,422,167"/>
+        <CheckBox Visibility="Hidden" IsEnabled="False" x:Name="cb2" Content="Second Question" Margin="51,323,422,61"/>
+        <CheckBox Visibility="Hidden" IsEnabled="False" x:Name="cb3" Content="Third Question" Margin="463,217,10,167"/>
+        <CheckBox Visibility="Hidden" IsEnabled="False" x:Name="cb4" Content="Forth Question" Margin="463,323,10,61"/>
+
+        <StatusBar VerticalAlignment="Top">
+            <Label x:Name="lblfor" Content="For Admins:"/>
+            <Menu>
+                <TextBox x:Name="login" TextWrapping="Wrap" Text="Login" Width="120" GotFocus="TextBox_GotFocus" />
+                <PasswordBox x:Name="password" Width="120" Password="123123" GotFocus="PasswordBox_GotFocus"/>
+                <Button x:Name="btnLogin" Content="Login in" Click="btnLogin_Click"/>
+                <Button x:Name="btnEditQuestion" IsEnabled="False" Content="Edit Question" Width="140" Click="btnEditQuestion_Click"/>
+                <Button x:Name="btnChangeLogPass" IsEnabled="False" Content="Change Login/Password" Width="140" Click="btnChangeLogPass_Click"/>
+                <Button x:Name="btnConfirm" IsEnabled="False" Visibility="Hidden" Content="Confirm" Click="btnConfirm_Click"/>
+            </Menu>
+        </StatusBar>
+        <Button Content="Ответить" HorizontalAlignment="Left" Margin="10,348,0,0" VerticalAlignment="Top" Height="43" Width="72" Click="Button_Click"/>
+
+    </Grid>
+</Window>

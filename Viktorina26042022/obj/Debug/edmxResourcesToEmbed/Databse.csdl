@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Databse" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="DatabseContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="QuestionSet" EntityType="Databse.Question" />
+  </EntityContainer>
+  <EntityType Name="Question">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="QuestionText" Type="String" Nullable="false" />
+    <Property Name="Answer1" Type="String" Nullable="false" />
+    <Property Name="Answer2" Type="String" Nullable="false" />
+    <Property Name="Answer3" Type="String" Nullable="false" />
+    <Property Name="AnswerTrue" Type="String" Nullable="false" />
+    <Property Name="Img" Type="Binary" Nullable="true" />
+  </EntityType>
+</Schema>

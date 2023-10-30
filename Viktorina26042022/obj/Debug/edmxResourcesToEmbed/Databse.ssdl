@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Databse.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="DatabseStoreContainer">
+    <EntitySet Name="QuestionSet" EntityType="Databse.Store.QuestionSet" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="QuestionSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QuestionText" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Answer1" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Answer2" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Answer3" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="AnswerTrue" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Img" Type="varbinary(max)" Nullable="true" />
+  </EntityType>
+</Schema>

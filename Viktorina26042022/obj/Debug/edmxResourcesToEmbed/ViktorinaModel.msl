@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Viktorina26042022ModelStoreContainer" CdmEntityContainer="Viktorina26042022Entities">
+    <EntitySetMapping Name="QuestionSet">
+      <EntityTypeMapping TypeName="Viktorina26042022Model.QuestionSet">
+        <MappingFragment StoreEntitySet="QuestionSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="QuestionText" ColumnName="QuestionText" />
+          <ScalarProperty Name="Answer1" ColumnName="Answer1" />
+          <ScalarProperty Name="Answer2" ColumnName="Answer2" />
+          <ScalarProperty Name="Answer3" ColumnName="Answer3" />
+          <ScalarProperty Name="AnswerTrue" ColumnName="AnswerTrue" />
+          <ScalarProperty Name="Img" ColumnName="Img" />
+          <ScalarProperty Name="CountOfAnsvers" ColumnName="CountOfAnsvers" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
